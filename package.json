@@ -1,0 +1,25 @@
+{
+  "name": "st",
+  "version": "1.0.0",
+  "description": "Sentient Dev Test",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsonson23/st.git"
+  },
+  "keywords": [
+    "st"
+  ],
+  "author": "Peter DHaiti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dsonson23/st/issues"
+  },
+  "homepage": "https://github.com/dsonson23/st#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  }
+}
