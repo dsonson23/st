@@ -21,6 +21,7 @@
   "homepage": "https://github.com/dsonson23/st#readme",
   "devDependencies": {
     "grunt": "^1.0.1",
+    "grunt-contrib-uglify": "^2.1.0",
     "jquery": "^3.1.1"
   }
 }
