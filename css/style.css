@@ -7995,6 +7995,100 @@ nav ul {
   list-style-type: none;
 }
 
+/* SLIDE SHOW HEADER CAROUSEL */
+.carousel-inner img {
+  width: 100%;
+  /* Set width to 100% */
+  margin: auto;
+}
+
+.carousel-caption h2 {
+  color: #B40607 !important;
+}
+
+.carousel-caption h1 {
+  color: #FF4500 !important;
+}
+
+.carousel p {
+  color: red;
+}
+
+.carousel-caption {
+  top: 15px;
+}
+
+#carouselButtons {
+  margin-left: 10px;
+  position: absolute;
+  top: 60px;
+  background-color: red;
+}
+
+.carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive, .thumbnail a > img, .thumbnail > img {
+  height: 720px;
+}
+
+/*icon color*/
+.icon-prev, .icon-next, .glyphicon {
+  color: red;
+}
+
+/*icon size*/
+.icon-prev, .icon-next {
+  font-size: 45px;
+}
+
+/*around down button*/
+.carousel-inner .fa-chevron-down {
+  position: absolute;
+  top: 625px;
+  right: 48%;
+}
+
+.fa-chevron-down {
+  position: absolute;
+  right: 48%;
+}
+
+/* icon color */
+.icon-prev, .icon-next, .glyphicon {
+  color: red;
+}
+
+/* icon size */
+.icon-prev, .icon-next {
+  font-size: 45px;
+}
+
+/* around down button */
+.carousel-inner .fa-chevron-down {
+  position: absolute;
+  top: 625px;
+  right: 48%;
+}
+
+.fa-chevron-down {
+  position: absolute;
+  right: 48%;
+}
+
+.caret {
+  color: #18A6D1;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  height: 200px;
+}
+
+footer .fa-caret-up {
+  color: red;
+  font-size: 80px;
+  border-style: none;
+}
+
 @media screen and (max-height: 450px) {
   .overlay {
     overflow-y: auto;
