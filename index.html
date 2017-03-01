@@ -39,15 +39,7 @@
 	    <link rel="stylesheet" type="text/css" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 		<link rel="stylesheet" type="text/css" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.9/font-awesome-animation.min.css'>
 	    <link rel="stylesheet" href="css/style.css" />
-	    
-
-
-	
-
-	    <!-- load JS Files: on this 1 js file, I have shrunk bootstrap, jQuery and my js files in 1 js file for faster delivery. 
-	     -->	    
-	    <script type="text/javascript" src="js/sentient.js"></script>
-	     
+	         
     </head>
     <body>
 
@@ -119,7 +111,7 @@
 
         <!-- SECTIONS AND INJECTED VIEWS -->
         <!-- Section basic reseller -->
-        <section id="photo">
+        <section ng-app="stApp" ng-controller="imagesCtrl" id="photo">
         	<div class="container">
 	        	<header class="text-center">
 	        		<h1 class="text-capitalize">Current images on the New Jersey Wikipedia page</h1>
@@ -147,5 +139,10 @@
 		  <p>Sentient Dev. Test By <a href="http://dhaiti.pro/" data-toggle="tooltip" title="Peter DHaiti's Portfolio">Peter DHaiti</a></p>
 		</footer>
 
+		<!-- load JS Files: on this 1 js file, I have shrunk bootstrap, jQuery and my js files in 1 js file for faster delivery. 
+	     -->	    
+	    <script type="text/javascript" src="js/sentient.js"></script>
+	    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+	    <script type="text/javascript" src="angular/app.js"></script>
     </body>
     </html>

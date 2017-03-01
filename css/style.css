@@ -7942,6 +7942,12 @@ button.close {
 
 /*# sourceMappingURL=bootstrap.css.map */
 /*Custom CSS*/
+/* DISABLE the Horizontal Scroll */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 /* Fullscreen Overlay Nav */
 .overlay {
   height: 0%;
