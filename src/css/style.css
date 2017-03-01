@@ -6830,7 +6830,7 @@ nav ul{
       color:  #FF4500 !important;
   }  
 
-  .carousel p {
+  header h1, .carousel p {
   color: red;
 }
 
@@ -6849,15 +6849,7 @@ nav ul{
     height: 720px;   
 }
 
-/*icon color*/
-.icon-prev, .icon-next, .glyphicon {
-  color: red;
-}
 
-/*icon size*/
-.icon-prev, .icon-next {
-  font-size: 45px;
-}
 /*around down button*/
 .carousel-inner  .fa-chevron-down {
   position: absolute;
@@ -6870,15 +6862,6 @@ nav ul{
   right: 48%;
 }
 
-/* icon color */
-.icon-prev, .icon-next, .glyphicon {
-  color: red;
-}
-
-/* icon size */
-.icon-prev, .icon-next {
-  font-size: 45px;
-}
 /* around down button */
 .carousel-inner  .fa-chevron-down {
   position: absolute;
@@ -6891,8 +6874,14 @@ nav ul{
   right: 48%;
 }
 
-.caret {
-  color: #18A6D1;
+section {
+  display: block;
+  width: 100%;
+  margin: 50px 0 0 0;
+}
+
+section {
+  padding: 50px 0;
 }
 
 /*Search Form*/
