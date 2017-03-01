@@ -6895,6 +6895,34 @@ nav ul{
   color: #18A6D1;
 }
 
+/*Search Form*/
+input[type=text] {
+    width: 250px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+
+#photo img {
+  max-width: 150px;
+  max-height: 150px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
 footer {
   background-color: #000;
   color: #fff;

@@ -109,22 +109,33 @@
 			</div>
         </header>
 
-        <!-- SECTIONS AND INJECTED VIEWS -->
-        <!-- Section basic reseller -->
-        <section ng-app="stApp" ng-controller="imagesCtrl" id="photo">
-        	<div class="container">
+        <!-- SECTION AND INJECTED VIEW -->
+
+        <section ng-app='wikiModul' id="photo">
+        	<div class="container" ng-controller='WikiController as wiki' ng-init='wiki.searchWikipedia(wiki.searchTerm)'  ng-cloak>
 	        	<header class="text-center">
 	        		<h1 class="text-capitalize">Current images on the New Jersey Wikipedia page</h1>
 	        		<hr class="">
 	        	</header>
-	        	<div class="row">
-		        	<article class="col-md-..">
-		        		<header>
-		        			<h3></h3>
-		        		</header>
-		        		<!-- angular templating -->
-            			<!-- this is where content will be injected -->
+	        	<div class="row text-center">
+		        	<article class="col-md-12">
+		        		<form>
+						  <input ng-model='wiki.searchTerm' ng-change='wiki.searchWikipedia(wiki.searchTerm)' class="form-control" type="text" name="search">
+						</form>
+						<p> {{wiki.error}}</p>
 		        	</article>
+		        </div>
+		        	<!-- The Result -->
+		        <div class="row">
+		        	<article class="col-md-4" ng-repeat="page in wiki.results" class="clearfix">  
+		                <div ng-if="page.thumbnail.source != null">
+		                    <div class="col-md-4">
+		                    {{page.revisions[0].user}}
+		                    <img ng-src="{{page.thumbnail.source}}" alt="{{page.title}}" class="img-thumbnail img-rounded img-responsive" ng-show="page.thumbnail.source">
+		                 	</div> 
+		                </div>
+		            </article>
+
 	        	</div> <!-- End row -->
         	</div> <!-- End container -->
         </section>
@@ -142,7 +153,8 @@
 		<!-- load JS Files: on this 1 js file, I have shrunk bootstrap, jQuery and my js files in 1 js file for faster delivery. 
 	     -->	    
 	    <script type="text/javascript" src="js/sentient.js"></script>
-	    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+	    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+	    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-sanitize.min.js"></script>
 	    <script type="text/javascript" src="angular/app.js"></script>
     </body>
     </html>
